@@ -1,0 +1,122 @@
+package com.visualnuts.exercice;
+
+import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
+
+import org.junit.Assert;
+import org.junit.jupiter.api.Test;
+
+import com.visualnuts.exercices.Exercise1;
+
+public class Exercise1Test {
+
+	    @Test
+	    void checkVisualNuts() throws Exception {
+
+	    	String expectedResult = "1\r\n"
+	        		+ "2\r\n"
+	        		+ "Visual\r\n"
+	        		+ "4\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "Visual\r\n"
+	        		+ "7\r\n"
+	        		+ "8\r\n"
+	        		+ "Visual\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "11\r\n"
+	        		+ "Visual\r\n"
+	        		+ "13\r\n"
+	        		+ "14\r\n"
+	        		+ "Visual Nuts\r\n"
+	        		+ "16\r\n"
+	        		+ "17\r\n"
+	        		+ "Visual\r\n"
+	        		+ "19\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "Visual\r\n"
+	        		+ "22\r\n"
+	        		+ "23\r\n"
+	        		+ "Visual\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "26\r\n"
+	        		+ "Visual\r\n"
+	        		+ "28\r\n"
+	        		+ "29\r\n"
+	        		+ "Visual Nuts\r\n"
+	        		+ "31\r\n"
+	        		+ "32\r\n"
+	        		+ "Visual\r\n"
+	        		+ "34\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "Visual\r\n"
+	        		+ "37\r\n"
+	        		+ "38\r\n"
+	        		+ "Visual\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "41\r\n"
+	        		+ "Visual\r\n"
+	        		+ "43\r\n"
+	        		+ "44\r\n"
+	        		+ "Visual Nuts\r\n"
+	        		+ "46\r\n"
+	        		+ "47\r\n"
+	        		+ "Visual\r\n"
+	        		+ "49\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "Visual\r\n"
+	        		+ "52\r\n"
+	        		+ "53\r\n"
+	        		+ "Visual\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "56\r\n"
+	        		+ "Visual\r\n"
+	        		+ "58\r\n"
+	        		+ "59\r\n"
+	        		+ "Visual Nuts\r\n"
+	        		+ "61\r\n"
+	        		+ "62\r\n"
+	        		+ "Visual\r\n"
+	        		+ "64\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "Visual\r\n"
+	        		+ "67\r\n"
+	        		+ "68\r\n"
+	        		+ "Visual\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "71\r\n"
+	        		+ "Visual\r\n"
+	        		+ "73\r\n"
+	        		+ "74\r\n"
+	        		+ "Visual Nuts\r\n"
+	        		+ "76\r\n"
+	        		+ "77\r\n"
+	        		+ "Visual\r\n"
+	        		+ "79\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "Visual\r\n"
+	        		+ "82\r\n"
+	        		+ "83\r\n"
+	        		+ "Visual\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "86\r\n"
+	        		+ "Visual\r\n"
+	        		+ "88\r\n"
+	        		+ "89\r\n"
+	        		+ "Visual Nuts\r\n"
+	        		+ "91\r\n"
+	        		+ "92\r\n"
+	        		+ "Visual\r\n"
+	        		+ "94\r\n"
+	        		+ "Nuts\r\n"
+	        		+ "Visual\r\n"
+	        		+ "97\r\n"
+	        		+ "98\r\n"
+	        		+ "Visual\r\n"
+	        		+ "Nuts";
+	        String result = tapSystemOut(() -> {
+	        	Exercise1.printNumber(100);
+	        });
+
+	        Assert.assertEquals(expectedResult, result.trim());
+	    }
+	
+}
